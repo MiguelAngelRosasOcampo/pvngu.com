@@ -2,9 +2,53 @@ html {
     box-sizing: border-box;
   }
   
-  *,
-  *::before,
-  *::after {
-    box-sizing: inherit;
-  }
-  
+*,
+*::before,
+*::after {
+box-sizing: inherit;
+}
+
+body{
+    background-color: #F0F0F0;
+    margin: 10px;
+}
+
+header{
+    background-color: #FFFFFF;
+    border-radius: 3px;
+    padding: 20px 
+}
+
+.contenedor-head{
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li
+{
+    padding-top: 10px;
+    text-align: end;
+}
+
+.logo{
+    display: block;
+    width: 119px;
+    height: auto;
+    margin-right: auto;
+    margin-left: auto;
+    animation: rotate 5s infinite alternate ease-in-out;
+}
+
+@keyframes rotate{
+    0%{
+        transform: rotate(-20deg);
+    }
+    100%{
+        transform: rotate(20deg);
+    }
+}
