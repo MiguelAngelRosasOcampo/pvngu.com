@@ -8,15 +8,27 @@ html {
 box-sizing: inherit;
 }
 
+h1:hover{
+    color: #F87171;
+    cursor: pointer; 
+}
+
 body{
     background-color: #F0F0F0;
-    margin: 10px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 50px 40px 10px 40px;
+    font-family: cursive;
 }
 
 header{
     background-color: #FFFFFF;
-    border-radius: 3px;
-    padding: 20px 
+    border-radius: 10px;
+    padding: 0 25px;    
+    width: 100%;
+    box-shadow: -3px 0 5px 0 rgba(200, 200, 200, 0.1), 
+    3px 0 5px 0 rgb(200, 200, 200, 0.1);
 }
 
 .contenedor-head{
@@ -35,13 +47,19 @@ li
     text-align: end;
 }
 
+li a{
+    text-decoration: none;
+    display: inline-block; /* Permite que el texto crezca sin afectar el diseño */
+    transition: font-size 0.3s ease-in-out; /* Suaviza la transición */
+}
+
 .logo{
     display: block;
     width: 119px;
     height: auto;
     margin-right: auto;
     margin-left: auto;
-    animation: rotate 5s infinite alternate ease-in-out;
+    animation: rotate 4s infinite alternate ease-in-out;
 }
 
 @keyframes rotate{
@@ -51,4 +69,94 @@ li
     100%{
         transform: rotate(20deg);
     }
+}
+
+#text-hello{
+    font-size: 36px;
+    color: #6B7280;
+}
+
+#text-omar{
+    font-size: 36px;
+}
+
+.contenedor-footer{
+    display: flex;
+    gap: 10px;
+}
+
+.descripcion-omar{
+    font-size: 24px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.contenedor-footer p{
+    flex:1;
+}
+
+#tiempo{
+    text-align: center;
+    align-self: flex-end;
+}
+
+#text-selected-word{
+    text-align: end;
+    align-self: flex-end;
+}
+.circle {
+    position: relative;
+    width: 250px;
+    height: 250px;
+    margin: 50px auto;
+  }
+  
+  .circle span {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    font-size: 16px;
+    font-weight: bold;
+    animation: spin 25s linear infinite;
+  }
+  
+  @keyframes spin {
+    from {
+      transform: rotate(calc(var(--i) * 12.4138deg)) 
+                 translate(0, -90px) 
+                 rotate(calc(-1 * (var(--i) * 12.4138deg)));
+    }
+    to {
+      transform: rotate(calc(var(--i) * 12.4138deg + 360deg)) 
+                 translate(0, -90px) /* Mismo valor que en 'from' */
+                 rotate(calc(-1 * (var(--i) * 12.4138deg + 360deg)));
+    }
+  }
+  
+
+.contenedor-relative{
+position:  relative;
+bottom: 240px;
+right: 5px;
+}
+
+.tam-img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.imagenes
+{
+    margin-top: 60px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+figcaption p{
+    font-size: 16px;
+    font-weight: 400;
+    font-family: 'Courier New', Courier, monospace;
+    color: rgb(90, 89, 89);
 }
