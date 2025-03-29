@@ -4,98 +4,98 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Pvngu | portafolio</title>
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+
         <link rel="stylesheet" href="css/normalize.css">
         <link rel="stylesheet" href="css/estilo.css">
-        <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
-        <link rel="icon" href="assets/imagen_1.png" type="image/x-icon">
+        <link rel="stylesheet" href="css/media_queries.css">
+
+        <link rel="icon" href="assets/favicon.png" type="image/png">
     </head>
+
     <body>
 
         <header>
-
-            <div class="contenedor-head">
+            <section>
                 <h1>Pvngu©</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#">Services</a></li>
-                        <li><a href="#">Works</a></li>
-                        <li><a href="#">Contact</a></li>
-                        <li><a href="#">CV</a></li>
-                        <li><a href="#">🇲🇽 Es</a></li>                        
-                    </ul>
-                </nav>
+            </section>
+
+            <div>
+                <!-- Palabra "DESIGN•" -->
+                <span style="--i:0">D</span>
+                <span style="--i:1">E</span>
+                <span style="--i:2">S</span>
+                <span style="--i:3">I</span>
+                <span style="--i:4">G</span>
+                <span style="--i:5">N</span>
+                <span style="--i:6; color:#c13636";>•</span>
+
+                <!-- Palabra "DEVELOP•" -->
+                <span style="--i:7">D</span>
+                <span style="--i:8">E</span>
+                <span style="--i:9">V</span>
+                <span style="--i:10">E</span>
+                <span style="--i:11">L</span>
+                <span style="--i:12">O</span>
+                <span style="--i:13">P</span>
+                <span style="--i:14; color:#c13636";>•</span>
+
+                <!-- Palabra "MAINTANCE•" -->
+                <span style="--i:15">M</span>
+                <span style="--i:16">A</span>
+                <span style="--i:17">I</span>
+                <span style="--i:18">N</span>
+                <span style="--i:19">T</span>
+                <span style="--i:20">A</span>
+                <span style="--i:21">N</span>
+                <span style="--i:22">C</span>
+                <span style="--i:23">E</span>
+                <span style="--i:24; color:#c13636"; >•</span>
+
+                <img src="assets/favicon.png" alt="Pvngu logo">
+            </div>
+
+            <nav>
+                <ul>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Works</a></li>
+                    <li><a href="#">Contact</a></li>
+                    <li><a href="#">CV</a></li>
+                    <li><a href="#">🇲🇽 ES</a></li>
+                </ul>
+            </nav>
+
+            <div>
+                <h2>Hello!</h2></p>
+                <h2>I'm Omar.</h2>
             </div>
 
             <div>
-                <img class="logo" src="assets/imagen_1.png">
-                <div class="contenedor-relative">
-                    <div class="circle">
-                        <span style="--i:0;">S</span>
-                        <span style="--i:1;">E</span>
-                        <span style="--i:2;">O</span>
-                        <span style="--i:3; color: red;">•</span>
-                        <span style="--i:4;">D</span>
-                        <span style="--i:5;">E</span>
-                        <span style="--i:6;">S</span>
-                        <span style="--i:7;">I</span>
-                        <span style="--i:8;">G</span>
-                        <span style="--i:9;">N</span>
-                        <span style="--i:10; color:red;">•</span>
-                        <span style="--i:11;">D</span>
-                        <span style="--i:12;">E</span>
-                        <span style="--i:13;">V</span>
-                        <span style="--i:14;">E</span>
-                        <span style="--i:15;">L</span>
-                        <span style="--i:16;">O</span>
-                        <span style="--i:17;">P</span>
-                        <span style="--i:18; color: red;">•</span>
-                        <span style="--i:19;">M</span>
-                        <span style="--i:20;">A</span>
-                        <span style="--i:21;">I</span>
-                        <span style="--i:22;">N</span>
-                        <span style="--i:23;">T</span>
-                        <span style="--i:24;">A</span>
-                        <span style="--i:25;">N</span>
-                        <span style="--i:26;">C</span>
-                        <span style="--i:27;">E</span>
-                        <span style="--i:28; color:red;">•</span>
-                    </div>
+                <p>I’m a front-end developer and web designer based in Baja California. My passion is creating visually appealing and user-friendly websites.</p>
 
-                    <div class="contenedor-texto">
-                        <p id="text-hello"><strong>Hello.</strong></p>
-                        <p id="text-omar"><strong>I'm Omar.</strong></p>
-                    </div>
+                <p id="hora"></p>
 
-                    <div class="contenedor-footer">
-                                
-                        <p class="descripcion-omar">I’m a front-end developer and web designer based in Baja California. My passion is creating visually appealing and user-friendly websites.</p>
-        
-                        <p id="tiempo"></p>
-        
-                        <p id="text-selected-word">( Selected works down here ↓)</p>
-                    </div> 
+                <p>( Selected works down here ↓)</p>
+
             </div>
-    </div>
         </header>
 
         <main>
-            <div class="imagenes">
-                <figure>
-                    <img class="tam-img" src="assets/imagen_2.webp">
-                    <figcaption>
-                        <p>Dental Clinic Saas - <span style="font-size: 12px;">2025</span></p>
-                    </figcaption>
-                </figure>
-
-                <figure>
-                    <img class="tam-img" src="assets/imagen_3.webp">
-                    <figcaption>
-                        <p>Repository UABC - <span style="font-size: 12px;">2024</span></p>
-                    </figcaption>
-                </figure>
-            </div>
+            
         </main>
-        
-    <script src="js/main.js"></script>
+
+        <footer>
+
+        </footer>
+
+        <script>
+            
+        </script>
+
+        <script src="js/hora.js"></script>
     </body>
 </html>

@@ -1,0 +1,66 @@
+@media (max-width: 26em){
+    
+    header div:nth-of-type(3){
+        grid-area: contenido;
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+    }
+
+    header div:nth-of-type(3) p:nth-child(2){
+        grid-area: 2 / 1 / 3 / 2;
+        font-size: .8rem;
+        padding-top: 1rem;
+        margin-top: auto;
+
+    }
+
+    header div:nth-of-type(3) p:nth-child(3){
+        grid-area: 2 / 2 / 3 / 5;
+        font-size: .8rem;
+        margin-top: auto;
+        text-align: center;
+        
+    }
+
+    header div:nth-of-type(3) p:nth-child(1){
+        grid-area: 1 / 1 / 2 / 5;
+        padding-right: 1vw;
+    }
+
+}
+
+@media (max-width: 16.875em){
+    header div:first-of-type img{
+        width: 62px;
+        transform: rotate(12deg);
+    }
+
+    header h1{font-size: 1.2rem;}
+
+    header nav ul{line-height: 1.6;}
+
+    header nav a{font-size: 1rem;}
+
+    header div:first-of-type span{
+        position: absolute;
+        font-weight: 700;
+        font-size: .6rem;
+        transform: 
+          rotate(calc(var(--i) * 14.4deg)) /* 360° / 25 = 14.4° */
+          translate(3rem) /* Radio */
+          rotate(calc(-1 * var(--i) * 14.4deg));
+        animation: orbit 20s linear infinite;
+      }
+      
+    @keyframes orbit {
+    to {
+        transform: 
+        rotate(calc(360deg + (var(--i) * 14.4deg))) 
+        translate(3rem) 
+        rotate(calc(-360deg + (-1 * var(--i) * 14.4deg)));
+    }
+    }
+}
+
+@media (max-height: 26.5625rem){header{height: 150vh;}}
